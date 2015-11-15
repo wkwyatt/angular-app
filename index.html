@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="scotchApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +16,7 @@
     <!-- LOCAL STYLES -->
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body ng-controller="mainController">
 	
 	<!-- HEADER AND NAV BAR -->
 	<header>
@@ -38,6 +38,9 @@
 	</header><!-- /header -->
 
 	<div id="main">
+		{{message}}
+		<div ng-view>
+		</div>
 	</div>
 </body>
 </html>
